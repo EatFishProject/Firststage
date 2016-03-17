@@ -7,14 +7,18 @@
 	body{
 		font: 16px "Microsoft Yahei","微软雅黑",Arial,sans-serif;
 	}
-    .fix{*zoom:1;}
-    .fix:after{clear: both;content:"";display: table;}
+    .fix{ *zoom:1; }
+    .fix:after{
+    	clear: both;
+    	content:"";
+    	display: table;
+    }
 	#container{
 		background-color: #eee;
 		border: 1px solid #999;
 		padding: 20px;
 		margin: 20px;
-        min-width: 700px;
+        min-width: 768px;
 	}
 	#main{
 		background-color: #fff;
@@ -50,7 +54,7 @@
 		margin: 20px;
 	}
 	#main p{ margin: 8px; }
-	#cleanfix{ clear: both; }
+	/*#cleanfix{ clear: both; }*/
 	</style>
 </head>
 <body>
@@ -72,7 +76,7 @@
             <p>参加感言：这次参加百度前端技术学院，我们希望通过共同的努力，搞好团队协作（Github这东西真TM难玩），把各自在开发中遇到的问题与收获与大家分享，在交流的同时提高自身能力。</p>
             <img src="img/zhuangbi.jpg" alt="">             
         </div>
-		<div id="cleanfix"></div>
+		<!--<div id="cleanfix"></div>-->
 	</div>
 </body>
 </html>
