@@ -4,24 +4,49 @@
 	<meta charset="UTF-8">
 	<title>-吃鱼不忘刷怪队-团队介绍</title>
 	<style>
-	body,div,p{
-		padding: 0;
-		margin: 0;
-	}
 	body{
 		font: 16px "Microsoft Yahei","微软雅黑",Arial,sans-serif;
 	}
-	#container,#left,#main,#right,p{ padding: 20px; }
 	#container{
-		width: 100%;
 		background-color: #eee;
+		border: 1px solid #999;
+		padding: 20px;
+		margin: 20px;
+	}
+	#main{
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #999;
+    padding: 20px;
+    overflow: hidden;
 	}
 	#left{
-		display: inline-block;
-		float: left; 
-		width: 160px;
+		box-sizing:border-box;
+		float: left;
+		width: 200px;
+		background-color: #fff;
+		border: 1px solid #999;
+		margin-right: 20px;
 	}
-	#right{ float: right; }
+	#right{
+		box-sizing:border-box;
+		float: right;
+		width: 120px;
+		background-color: #fff;
+		border: 1px solid #999;
+		margin-left: 20px;
+	}
+	#left img{
+		float: left;
+		display: block;
+		margin: 20px;
+	}
+	#right img{
+		display: block;
+		margin: 20px;
+	}
+	#main p{ margin: 8px; }
+	#cleanfix{ clear: both; }
 	</style>
 </head>
 <body>
@@ -30,16 +55,20 @@
 			<img src="img/team_avatar.jpg" alt="吃鱼不忘刷怪队LOGO">
 			<p>吃鱼不忘刷怪队</p>
 		</div>
-		
 		<div id="right">
-			<div class="avatar"></div>
-			<div class="avatar"></div>
-			<div class="avatar"></div>
-			<div class="avatar"></div>
+			<img src="img/head1.jpg" alt="">
+			<img src="img/head2.jpg" alt="">
+			<img src="img/head3.jpg" alt="">
+			<img src="img/head4.jpg" alt="">
 		</div>
 		<div id="main">
-			<p>我们是一个来自不同地区工作汪组成的团队，</p>
+			<p>队伍名称：见左侧</p>
+			<p>名称由来：联系队员之一的时候，他问：“啊……组队？是要打怪么？”再加上组长是个懒得想名字又笨呆属性为鱼的人，于是乎……名字就这么定下来啦orz。</p>
+			<p>队员组成：头像见右侧，从上至下分别是Fetsi、啊拉嘞、小莫、明<sup>5</sup>（这个梗能玩一年）</p>
+			<p>参加感言：这次参加百度前端技术学院，我们希望通过共同的努力，搞好团队协作（Github这东西真TM难玩），把各自在开发中遇到的问题与收获与大家分享，在交流的同时提高自身能力。</p>
+			<img src="img/zhuangbi.jpg" alt="">				
 		</div>
+		<div id="cleanfix"></div>
 	</div>
 </body>
 </html>
