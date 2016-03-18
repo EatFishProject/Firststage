@@ -7,6 +7,12 @@
 	body{
 		font: 16px "Microsoft Yahei","微软雅黑",Arial,sans-serif;
 	}
+    .fix{ *zoom:1; }
+    .fix:after{
+    	clear: both;
+    	content:"";
+    	display: table;
+    }
 	#container{
 		min-width: 768px;
 		background-color: #eee;
@@ -15,11 +21,10 @@
 		margin: 20px;
 	}
 	#main{
-		position: relative;
 		background-color: #fff;
 		border: 1px solid #999;
-		padding: 20px;
-		overflow: hidden;
+        padding: 20px;
+        overflow: hidden;
 	}
 	#left{
 		box-sizing:border-box;
@@ -47,11 +52,10 @@
 		margin: 20px;
 	}
 	#main p{ margin: 8px; }
-	#cleanfix{ clear: both; }
 	</style>
 </head>
 <body>
-	<div id="container">
+	<div id="container" class="fix">
 		<div id="left">
 			<img src="img/team_avatar.jpg" alt="吃鱼不忘刷怪队LOGO">
 			<p>吃鱼不忘刷怪队</p>
@@ -62,14 +66,13 @@
 			<img src="img/head3.jpg" alt="">
 			<img src="img/head4.jpg" alt="">
 		</div>
-		<div id="main">
-			<p>队伍名称：见左侧</p>
-			<p>名称由来：联系队员之一的时候，他问：“啊……组队？是要打怪么？”再加上组长是个懒得想名字又笨呆属性为鱼的人，于是乎……名字就这么定下来啦orz。</p>
-			<p>队员组成：头像见右侧，从上至下分别是Fetsi、啊拉嘞、小莫、明<sup>5</sup>（这个梗能玩一年）</p>
-			<p>参加感言：这次参加百度前端技术学院，我们希望通过共同的努力，搞好团队协作（Github这东西真TM难玩），把各自在开发中遇到的问题与收获与大家分享，在交流的同时提高自身能力。</p>
-			<img src="img/zhuangbi.jpg" alt="">				
-		</div>
-		<div id="cleanfix"></div>
+        <div id="main">
+            <p>队伍名称：见左侧</p>
+            <p>名称由来：联系队员之一的时候，他问：“啊……组队？是要打怪么？”再加上组长是个懒得想名字又笨呆属性为鱼的人，于是乎……名字就这么定下来啦orz。</p>
+            <p>队员组成：头像见右侧，从上至下分别是Fetsi、啊拉嘞、小莫、明<sup>5</sup>（这个梗能玩一年）</p>
+            <p>参加感言：这次参加百度前端技术学院，我们希望通过共同的努力，搞好团队协作（Github这东西真TM难玩），把各自在开发中遇到的问题与收获与大家分享，在交流的同时提高自身能力。</p>
+            <img src="img/zhuangbi.jpg" alt="">             
+        </div>
 	</div>
 </body>
 </html>
