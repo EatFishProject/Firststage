@@ -2,4 +2,6 @@
 
 我们是EatFishProject（吃鱼不忘刷怪队），不要问我为什么起这个名，我想静静
 
+![](https://github.com/EatFishProject/Firststage/blob/master/task3/img/jingjing2.jpg)
+
 **[团队介绍](http://eatfishproject.github.io/Firststage/task3/threeCol.html)**
