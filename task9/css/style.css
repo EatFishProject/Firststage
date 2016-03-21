@@ -1,0 +1,215 @@
+/*整站样式*/
+html,body,dl,dd,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0; border:0;}
+body{font-size: 12px;font-family: '微软雅黑', Arial;}
+input{padding: 0;font-family: '微软雅黑', Arial;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+ul,ol,li{ list-style-type:none;}
+img{border:0;vertical-align:middle}
+select,input,select{vertical-align:middle;outline: none;}
+table{border-collapse:collapse;border-spacing:0}
+iframe{border:none;}
+a:link{color:#666666;text-decoration:none;}
+a:visited{/*color:#666666;*/text-decoration:none;}
+a:hover{/*color:#0093ff;*/text-decoration:none;}
+a:active{color:#0093ff;text-decoration:none;}
+.h{display:none;visibility:visible;}
+.wrap{border: 0;padding:0;width:1100px;margin:0 auto;*zoom:1;}
+.wrap:after{clear: both;content:"";display: table;}
+.c{clear:both;font-size:0;line-height:0;height:0;visibility:visible;}
+.fix{*zoom:1;}
+.fix:after{clear: both;content:"";display: table;}
+.fl{float: left;}
+.fr{float: right;}
+.pors{position: relative;}
+/*网页样式*/
+header {
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 1200px;
+	height: 55px;
+	border-bottom: 1px solid #3493c4;
+	padding: 0 90px 0 50px;
+	background: #2189bf;
+}
+.logo {
+	display: block;
+	margin-top: 10px;
+}
+.login-box {
+	margin-top: 18px;
+}
+.login-pic,.login {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.login {
+	font-family: '黑体',SimSun;
+	font-size: 12px;
+	color: #fff;
+	vertical-align: middle;
+}
+.search-box {
+	position: relative;
+	margin: 14px 20px 0 0;
+}
+.search {
+	width: 312px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-radius: 14px;
+	border: 1px solid #abd3e7;
+}
+.search-submit {
+	position: absolute;
+	top: 6px;
+	left: 17px;
+	border: none;
+	width: 16px;
+	height: 16px;
+	background: url(../images/search.png) no-repeat;
+	cursor: pointer;
+}
+.container {
+	min-width: 1200px;
+	height: 1000px;/*暂时高度，调试用*/
+}
+.mainl {
+	box-sizing: border-box;
+	width: 260px;
+	height: 100%;
+	border-right: 1px solid #353947;
+	background: #2a2e3d;
+}
+.avatar-box {
+	/*text-align: center;*/
+	margin-top: 18px;
+}
+.avatar {
+	width: 57px;
+	height: 57px;
+	margin-left: 45px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	cursor: pointer;
+}
+.person-name {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	font-family: '黑体',SimHei;
+	font-size: 16px;
+	color: #fff;
+	vertical-align: middle;
+	margin-left: 18px;
+}
+.zl-box {
+	margin: 20px 0;
+}
+.zl-box a {
+	display: block;
+	float: left;
+	padding: 0 20px;
+}
+.zl-box a:first-child {
+	border-right: 2px solid #323647;
+	margin-left: 45px;
+}
+.zl-box a {
+	font-family: '黑体',SimHei;
+	font-size: 16px;
+	line-height: 18px;
+	color: #6e8095;
+}
+.l-list {
+	
+}
+.item {
+	padding: 15px 0 15px 45px;
+	box-sizing: border-box;
+}
+.item-selected {
+	background: #383d4e;
+}
+.item-icon,.item-text {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.item-text {
+	font-family: '黑体',SimHei;
+	font-size: 12px;
+	line-height: 12px;
+	color: #6e8095;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+.item-text1 {
+	color: #fff;
+}
+.item-list dl dt {
+	padding: 5px 0;
+}
+.item-list dl {
+	margin-left: 24px;
+}
+.item-list-icon1,.item-list-icon2,.item-list-text {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.item-list-icon1 {
+	margin-right: 4px;
+}
+.item-list-icon-down {
+	margin-right: 1px;
+}
+.item-list-text {
+	font-family: '黑体',SimHei;
+	font-size: 12px;
+	line-height: 12px;
+	color: #6e8095;
+	vertical-align: middle;
+}
+.item dl dd {
+	margin-left: 25px;
+	padding: 5px 0;
+}
+.item-list-text1 {
+	color: #fff;
+}
+.mainr {
+	height: 100%;
+	overflow: hidden;
+	background: #eeeeed;
+}
+.mainr-top {
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #fcfcfc;
+	background: #fff;
+}
+.mainr-top ul li {
+	float: left;
+	margin-right: 6px;
+}
+.mainr-top ul li:first-child {
+	margin-right: 10px;
+	margin-left: 30px;
+}
+.mainr-top li a {
+	font-family: '黑体',SimHei;
+	font-size: 14px;
+	color: #aaaaaa;
+	line-height: 30px;
+}
+.mainr-top li a:hover {
+	color: #6898c2;
+}
+.mainr-top .on a {
+	color: #6898c2;
+}
