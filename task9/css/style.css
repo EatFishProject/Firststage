@@ -113,7 +113,7 @@ a.person-name:hover {
 	color: #fff;
 }
 .zl-box {
-	margin: 20px 0;
+	margin-top: 20px;
 }
 .zl-box a {
 	display: block;
@@ -134,7 +134,7 @@ a.person-name:hover {
 	color: #fff;
 }
 .l-list {
-	
+	margin-top: 20px;
 }
 .item-box {
 	margin: 10px 0;
@@ -317,7 +317,7 @@ a.person-name:hover {
 	font: 12px/25px "黑体",SimHei; 
 	color: #323333;
 	border: 1px solid #c2c3c4;
-	text-indent: 10px;
+	text-indent: 5px;
 }
 .mainr-box1-bg {
     position: absolute;
