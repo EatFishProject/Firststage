@@ -218,3 +218,120 @@ a.person-name {
 .mainr-top .on a {
 	color: #6898c2;
 }
+.mainr-box {
+	box-sizing: border-box;
+	width: 890px;
+	margin:20px 0 0 60px;
+}
+.mainr-box1 {
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #dddbdd;
+    position: relative;
+    padding-bottom: 10px;
+}
+.mainr-box1 > ul > li {
+	float: left;
+	margin-top: 15px;
+}
+.select-box {
+	margin-left: 30px;
+}
+.select-box1 {
+	margin-top: 15px;
+}
+.select-box2 {
+	margin-left: 189px;
+}
+.btn-select { 
+	box-sizing: border-box;
+    position: relative; 
+    display: inline-block; 
+    width: 70px; 
+    height: 25px;
+    border: 1px solid #c2c3c4;  
+    font: 12px/25px "黑体",SimHei; 
+    color: #323333; 
+    
+}
+.btn-select1 {
+	background: url(../images/r-down.png) no-repeat 50px center;
+}
+.btn-select2 {
+	width: 120px;
+	background: url(../images/r-down.png) no-repeat 100px center;
+} 
+.btn-select .cur-select { 
+    position: absolute; 
+    display: block; 
+    width: 70px; 
+    height: 25px; 
+    line-height: 25px; 
+    text-indent: 8px; 
+} 
+.btn-select:hover { 
+     background-image: url(../images/r-down-1.png);
+     background-repeat: no-repeat; 
+}
+.select-box > form {
+	float: left;
+} 
+.btn-select select { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 25px; 
+    opacity: 0; 
+    filter: alpha(opacity: 0;); 
+    font: 12px/25px "黑体",SimHei; 
+    color: #323333; 
+} 
+.btn-select select option { 
+    text-indent: 10px;
+}
+.select-box > p {
+	font: 12px/25px "黑体",SimHei;
+	color: #aaa;
+	float: left;
+	margin-right: 15px;
+}
+.select-box form > input {
+	box-sizing: border-box;
+	width: 120px;
+	height: 25px;
+	font: 12px/25px "黑体",SimHei; 
+	color: #323333;
+	border: 1px solid #c2c3c4;
+	text-indent: 10px;
+}
+.mainr-box1-bg {
+    position: absolute;
+    top: 22px;
+    left: 350px;
+    width: 27px;
+    height: 37px;
+}
+.mainr-box1-jg1 {
+	margin-right: 38px;
+}
+.mainr-box1-jg2,.mainr-box1-jg4 {
+	margin-right: 58px;
+}
+.mainr-box1-jg3,.mainr-box1-jg5 {
+	margin-right: 12px;
+}
+.mainr-box1-submit {
+    position: absolute;
+    top: 30px;
+    right: 110px;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    background: #388ac1;
+    cursor: pointer;
+    color: #fff;
+    font: 12px/25px "黑体",SimHei;
+    text-align: center;
+}
