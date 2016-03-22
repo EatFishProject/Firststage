@@ -127,8 +127,12 @@ a.login {
 .l-list {
 	
 }
+.item-box {
+	margin: 10px 0;
+	cursor: pointer;
+}
 .item {
-	padding: 15px 0 15px 45px;
+	padding:5px 0 5px 45px;
 	box-sizing: border-box;
 }
 .item-selected {
@@ -151,7 +155,8 @@ a.login {
 	color: #fff;
 }
 .item-list dl dt {
-	padding: 5px 0;
+	margin: 8px 0;
+	cursor: pointer;
 }
 .item-list dl {
 	margin-left: 24px;
@@ -175,8 +180,8 @@ a.login {
 	vertical-align: middle;
 }
 .item dl dd {
-	margin-left: 25px;
-	padding: 5px 0;
+	margin: 5px 0 8px 25px;
+	cursor: pointer;
 }
 .item-list-text1 {
 	color: #fff;
