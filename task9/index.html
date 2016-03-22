@@ -123,6 +123,7 @@
             <!-- 列表容器结束 -->
     	</div>
         <!-- 页面左边容器结束 -->
+        <!-- 右边容器开始 -->
     	<div class="mainr">
     		<div class="mainr-top">
     			<ul>
@@ -140,7 +141,125 @@
     				</li>
     			</ul>
     		</div>
+    		<!-- 右边固定宽度容器开始 -->
+    		<div class="mainr-box fix">
+    			<!-- 右边搜索内容开始 -->
+    			<div class="mainr-box1 fix">
+    				<div class="mainr-box1-bg">
+    					<img src="images/r-m-1.png" alt="">
+    				</div>
+    				<!-- 搜索选项上开始 -->
+    				<div class="select-box select-box1 fix">
+    					<p>查询项</p>
+    					<form class="mainr-box1-jg1"> 
+    						<a class="btn-select btn-select1" id="btn_select"> 
+    							<span class="cur-select">第一项</span> 
+    							<select> 
+    								<option>第一项</option>
+    					    		<option>第二项</option> 
+    					    		<option>第三项</option> 
+    					    		<option>第四项</option> 
+    					    		<option>第五项</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    					<p>买方</p>
+    					<form class="mainr-box1-jg2"> 
+    						<a class="btn-select btn-select2" id="btn_select"> 
+    							<span class="cur-select">小A</span> 
+    							<select> 
+    								<option>小A</option>
+    								<option>小B</option>
+    					    		<option>小C</option> 
+    					    		<option>小D</option> 
+    					    		<option>小E</option> 
+    					    		<option>小F</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    					<p>日期</p>
+    					<form class="mainr-box1-jg3">
+    						<input type="text" value="2016-04-01" >
+    					</form>
+    					<p>总耗时</p>
+    					<form> 
+    						<a class="btn-select btn-select1" id="btn_select"> 
+    							<span class="cur-select">8天</span> 
+    							<select> 
+    								<option>8天</option> 
+    								<option>10天</option> 
+    								<option>12天</option> 
+    								<option>14天</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    				</div>
+    				<!-- 搜索选项上结束 -->
+    				<!-- 搜索选项下开始 -->
+    				<div class="select-box select-box2 fix">
+    					<p>卖方</p>
+    					<form class="mainr-box1-jg4"> 
+    						<a class="btn-select btn-select2" id="btn_select"> 
+    							<span class="cur-select">小C</span> 
+    							<select> 
+    								<option>小A</option>
+    								<option>小B</option>
+    					    		<option>小C</option> 
+    					    		<option>小D</option> 
+    					    		<option>小E</option> 
+    					    		<option>小F</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    					<p>人数</p>
+    					<form class="mainr-box1-jg5">
+    						<a class="btn-select btn-select1" id="btn_select"> 
+    							<span class="cur-select">10人</span> 
+    							<select> 
+    								<option>10人</option> 
+    								<option>20人</option> 
+    								<option>40人</option> 
+    								<option>50人</option> 
+    								<option>60人</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    					<p>成交项</p>
+    					<form>
+    						<a class="btn-select btn-select2" id="btn_select"> 
+    							<span class="cur-select">10项</span> 
+    							<select> 
+    								<option>10项</option> 
+    								<option>20项</option> 
+    								<option>30项</option> 
+    								<option>40项</option> 
+    							</select> 
+    						</a> 
+    					</form>
+    				</div>
+    				<!-- 搜索选项下结束 -->
+    				<input type="submit" value="搜索" class="mainr-box1-submit">
+    			</div>
+    			<!-- 右边搜索内容结束 -->
+    		</div>
+    		<!-- 右边固定宽度容器结束 -->
     	</div>
+    	<!-- 右边容器结束 -->
     </div>
+    <script>
+        var $$ = function (id) { 
+        return document.getElementById(id); 
+        } 
+        window.onload = function () { 
+            var btnSelect = $$("btn_select"); 
+            var curSelect = btnSelect.getElementsByTagName("span")[0]; 
+            var oSelect = btnSelect.getElementsByTagName("select")[0]; 
+            var aOption = btnSelect.getElementsByTagName("option"); 
+            oSelect.onchange = function () { 
+            var text=oSelect.options[oSelect.selectedIndex].text; 
+            curSelect.innerHTML = text; 
+            } 
+        } 
+    </script>    
 </body>
 </html>
