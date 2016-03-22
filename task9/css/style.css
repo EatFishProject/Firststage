@@ -96,7 +96,7 @@ a.login {
 	*zoom: 1;
 	cursor: pointer;
 }
-.person-name {
+a.person-name {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
