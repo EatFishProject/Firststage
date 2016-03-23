@@ -95,6 +95,8 @@ a.login {
 	*display: inline;
 	*zoom: 1;
 	cursor: pointer;
+	-webkit-transition: opacity .3s ease-out,border-color .3s ease-out;
+	transition: opacity .3s ease-out,border-color .3s ease-out;
 }
 a.person-name {
 	display: inline-block;
@@ -105,6 +107,8 @@ a.person-name {
 	color: #6e8095;
 	vertical-align: middle;
 	margin-left: 18px;
+	-webkit-transition: color .3s ease-out,border-color .3s ease-out;
+	transition: color .3s ease-out,border-color .3s ease-out;
 }
 .avatar:hover {
 	opacity: .8;
@@ -129,6 +133,12 @@ a.person-name:hover {
 	font-size: 16px;
 	line-height: 18px;
 	color: #6e8095;
+	-webkit-transition: color .3s ease-out,border-color .3s ease-out;
+	transition: color .3s ease-out,border-color .3s ease-out;
+}
+.zl-box a span {
+	/*font-family: '宋体',Simsun;*/
+	font-size: 12px;
 }
 .zl-box a:hover {
 	color: #fff;
@@ -144,6 +154,8 @@ a.person-name:hover {
 	margin: 5px 0; 
 	box-sizing: border-box;
 	cursor: pointer;
+	-webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+	transition: background-color .3s ease-out,border-color .3s ease-out;
 }
 .item:hover {
 	background: #383d4e;
@@ -265,7 +277,9 @@ a.person-name:hover {
     height: 25px;
     border: 1px solid #c2c3c4;  
     font: 12px/25px "黑体",SimHei; 
-    color: #323333; 
+    color: #323333;
+    -webkit-transition: background-image .3s ease-out,border-color .3s ease-out;
+    transition: background-image .3s ease-out,border-color .3s ease-out; 
     
 }
 .btn-select1 {
@@ -348,6 +362,8 @@ a.person-name:hover {
     color: #fff;
     font: 12px/25px "黑体",SimHei;
     text-align: center;
+    -webkit-transition: opacity .3s ease-out,border-color .3s ease-out;
+    transition: opacity .3s ease-out,border-color .3s ease-out;
 }
 .mainr-box1-submit:hover {
 	opacity: .95;
@@ -384,7 +400,7 @@ a.person-name:hover {
 	cursor: pointer;
 }
 .mainr-box2-left ul li:hover i {
-	display: block;
+	opacity: 1;
 }
 .mainr-box2-left ul li:first-child {
 	margin-left: 5px;
@@ -417,10 +433,12 @@ a.person-name:hover {
 	top: -1px;
 	left: -1px;
 	background: #4388c8;
-	display: none;
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-out,border-color .2s ease-out;
+	transition: opacity .2s ease-out,border-color .2s ease-out;
 }
 .mainr-box2-left .on i {
-	display: block;
+	opacity: 1;
 }
 .mainr-box2-right {
 	width: 135px;
@@ -508,4 +526,187 @@ a.person-name:hover {
 	font: 10px/10px '黑体', SimHei;
 	color: #aaa;
 	margin-top: 10px;
+}
+.mainr-box4 {
+	margin-top: 12px;
+}
+.mainr-box4l {
+	box-sizing: border-box;
+	width: 530px;
+	border: 1px solid #cdd0d3;
+	background: #fff;
+	border-radius: 5px;
+}
+.mainr-box4l-h2 {
+	font: 12px/12px '黑体', SimHei;
+	color: #aaa;
+	text-indent: 20px;
+	box-sizing: border-box;
+	height: 40px;
+	border-radius: 5px 5px 0 0;
+	background: #f4f6f7;
+	line-height: 40px;
+	border-bottom: 1px solid #e7e8eb;
+}
+.mainr-box4l ul {
+	margin: 12px 0 0 20px;
+}
+.mainr-box4l ul li {
+	position: relative;
+	box-sizing: border-box;
+	float: left;
+	font: 12px/26px '微软雅黑',Arial;
+	color: #535353;
+	padding: 0 24px;
+	margin-right: 4px;
+	border-radius: 3px 3px 0 0;
+	background: #ececef;
+	cursor: pointer;
+}
+.mainr-box4l ul li i {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	display: none;
+}
+.mainr-box4l ul .on {
+	background: #fff;
+	border-width: 1px 1px 0 1px;
+	border-color: #cacbcb;
+	border-style: solid;  
+}
+.mainr-box4l ul .on i {
+	display: block;
+}
+.table-box {
+	box-sizing: border-box;
+	width: 490px;
+	margin: 0 0 24px 20px;
+	border: 1px solid #cacbcb;
+	border-radius: 0 5px 5px 5px;
+}
+.table-box table {
+	margin: 30px auto 35px;
+}
+.table-box table td {
+	font: 12px/28px '宋体', SimSun;
+	color: #535353;
+	padding: 0 16px;
+	border: 1px solid #ececed;
+	cursor: pointer;
+	-webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+	transition: background-color .3s ease-out,border-color .3s ease-out;
+}
+.table-box table td:hover {
+	background: #f1f1f1;
+}
+.mainr-box4r {
+	box-sizing: border-box;
+	width: 350px;
+	background: #fff;
+	border: 1px solid #cdd0d3;
+	border-radius: 5px;
+}
+.mainr-box4r-main {
+	padding: 5px 35px 32px;
+}
+.mainr-box4r-main section {
+	box-sizing: border-box;
+	border-bottom: 1px solid #e8e8e8;
+}
+.mainr-box4r-main section:after{clear: both;content:"";display: table;}
+.mainr-box4r-main section h3 {
+	font: 12px/12px '微软雅黑', Arial;
+	color: #c3c2c2;
+	text-indent: 15px;
+	margin-top: 5px;
+}
+.mainr-box4r-main section p {
+	font: 12px/12px '微软雅黑', Arial;
+	color: #535353;
+	text-indent: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.sectionl {
+	box-sizing: border-box;
+	width: 30%;
+	float: left;
+}
+.sectionr {
+	box-sizing: border-box;
+	border-left: 1px solid #e8e8e8;
+	width: 70%;
+	float: left;
+}
+.section1 {
+	padding-bottom: 100px;
+}
+.mainr-box4r-search {
+	margin-top: 5px;
+}
+.mainr-box4r-search p {
+	float: left;
+	font: 12px/12px '微软雅黑', Arial;
+	color: #c3c2c2;
+	margin-top: 10px;
+}
+.mainr-box4r-search input[type="submit"] {
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 14px;
+	font: 12px/24px "微软雅黑",Arial;
+	color: #fff;
+	background: #388ac1;
+	-webkit-transition: opacity .3s ease-out,border-color .3s ease-out;
+	transition: opacity .3s ease-out,border-color .3s ease-out;
+}
+.mainr-box4r-search input[type="submit"]:hover {
+	opacity: .95;
+}
+.checkbox-box {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+}
+.checkbox-box input {
+	visibility: hidden;
+}
+.checkbox-box label {
+	cursor: pointer;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 0;
+  	left: 0;
+	background: #d5d5d5;
+}
+.checkbox-box label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 4px;
+	background: transparent;
+	top: 2px;
+	left: 1px;
+	border: 3px solid #646262;
+	border-top: none;
+	border-right: none;
+ 
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkbox-box input[type=checkbox]:checked + label:after {
+	opacity: 1;
 }
