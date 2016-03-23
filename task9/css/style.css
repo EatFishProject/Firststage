@@ -400,7 +400,7 @@ a.person-name:hover {
 	cursor: pointer;
 }
 .mainr-box2-left ul li:hover i {
-	display: block;
+	opacity: 1;
 }
 .mainr-box2-left ul li:first-child {
 	margin-left: 5px;
@@ -433,10 +433,12 @@ a.person-name:hover {
 	top: -1px;
 	left: -1px;
 	background: #4388c8;
-	display: none;
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-out,border-color .2s ease-out;
+	transition: opacity .2s ease-out,border-color .2s ease-out;
 }
 .mainr-box2-left .on i {
-	display: block;
+	opacity: 1;
 }
 .mainr-box2-right {
 	width: 135px;
@@ -595,9 +597,11 @@ a.person-name:hover {
 	padding: 0 16px;
 	border: 1px solid #ececed;
 	cursor: pointer;
+	-webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+	transition: background-color .3s ease-out,border-color .3s ease-out;
 }
 .table-box table td:hover {
-	background: #f3f5f6;
+	background: #f1f1f1;
 }
 .mainr-box4r {
 	box-sizing: border-box;
